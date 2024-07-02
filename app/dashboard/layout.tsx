@@ -1,4 +1,8 @@
 import SideNav from '@/app/ui/dashboard/sidenav';
+
+// Next.js will prerender the static parts of your route and defer the dynamic parts until the user requests them with this below: & added code snippet to next.config.mjs
+// Should see difference in production env more
+export const experimental_ppr = true;
  
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
